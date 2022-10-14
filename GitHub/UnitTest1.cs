@@ -5,6 +5,7 @@ namespace GitHub
         [SetUp]
         public void Setup()
         {
+            Console.WriteLine("hi suraj");
         }
 
         [Test]
