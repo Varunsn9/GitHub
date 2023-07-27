@@ -11,7 +11,6 @@ namespace GitHub.PolyMorphism
     {
         void InterfaceMethod();
         void InterfaceMethod(string name);
-
     }
     public abstract class FirstAbstractClass : OOPS
     {

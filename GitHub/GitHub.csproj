@@ -51,7 +51,9 @@
   <ItemGroup>
     <Compile Include="Encapsulation\EncapsulationTesting01.cs" />
     <Compile Include="GitFirstCommit.cs" />
+    <Compile Include="InterfaceAndAbstractClass\VirtualOverrideAbstrace.cs" />
     <Compile Include="PolyMorphism\OOPS.cs" />
+    <Compile Include="PolyMorphism\OverRidingVirtualSealed\OverRidingSealedAndVirtual.cs" />
     <Compile Include="PolyMorphism\ThisAndBase.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
