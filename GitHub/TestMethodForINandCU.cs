@@ -9,15 +9,17 @@ using System.Windows;
 namespace GitHub
 {
     [TestClass]
-    [TestCategory("Inilization and Cleanup")]
-    public class TestMethodForINandCU : TIandTC
+    //[TestCategory("Inilization and Cleanup")]
+    public class TestMethodForINandCU :BaseClass
     {
         [TestMethod]
         [TestCategory("Inilization and Cleanup")]
         public void TestMethod()
         {
-            MessageBox.Show("This is a test method");
+            MessageBox.Show("This is a test method",TestContext.TestName);
+           // MessageBox.Show(TestContext.Properties["Browser"].ToString());
         }
+
         [ClassInitialize]
         public static new void ClassINi(TestContext testContext)
         {

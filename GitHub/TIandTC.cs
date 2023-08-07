@@ -16,6 +16,7 @@ namespace GitHub
         {
             MessageBox.Show("test Initialize");
         }
+
         [TestCleanup]
         public void TestCleanup()
         {
