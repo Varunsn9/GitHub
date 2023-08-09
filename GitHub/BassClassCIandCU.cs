@@ -14,19 +14,19 @@ namespace GitHub
         [ClassInitialize]
         public static void ClassINi(TestContext testContext)
         {
-            MessageBox.Show("this is a class INitialize");
+          //  MessageBox.Show("this is a class INitialize");
         }
         [TestMethod]
         [TestCategory("ClassINi")]
         public void Display()
         {
-            MessageBox.Show("This is a testmethod");
+            //MessageBox.Show("This is a testmethod");
         }
       
         [ClassCleanup]
         public static void ClassCleanup()
         {
-            MessageBox.Show("This is Class Cleanup");
+            //MessageBox.Show("This is Class Cleanup");
         }
     }
 }

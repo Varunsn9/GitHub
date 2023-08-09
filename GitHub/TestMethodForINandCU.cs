@@ -16,20 +16,20 @@ namespace GitHub
         [TestCategory("Inilization and Cleanup")]
         public void TestMethod()
         {
-            MessageBox.Show("This is a test method",TestContext.TestName);
+          //  MessageBox.Show("This is a test method",TestContext.TestName);
            // MessageBox.Show(TestContext.Properties["Browser"].ToString());
         }
 
         [ClassInitialize]
         public static new void ClassINi(TestContext testContext)
         {
-            MessageBox.Show("this is a class INitialize");
+            //MessageBox.Show("this is a class INitialize");
         }
 
         [ClassCleanup]
         public static new void ClassCleanup()
         {
-            MessageBox.Show("This is Class Cleanup");
+            //MessageBox.Show("This is Class Cleanup");
         }
 
     }

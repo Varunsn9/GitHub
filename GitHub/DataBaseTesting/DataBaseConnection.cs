@@ -43,7 +43,6 @@ namespace GitHub.DataBaseTesting
                     $"{tables[1].ToString()}");
                 Console.WriteLine( tables[0].ToString()+$"    {tables[1].ToString()}     {tables[2].ToString()}     {tables[1].ToString()}");
             }
-
             odbcConnection.Close();
         }
     }

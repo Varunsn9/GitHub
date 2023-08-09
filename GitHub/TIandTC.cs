@@ -14,13 +14,13 @@ namespace GitHub
         [TestInitialize]
         public void TestIni()
         {
-            MessageBox.Show("test Initialize");
+         //   MessageBox.Show("test Initialize");
         }
 
         [TestCleanup]
         public void TestCleanup()
         {
-            MessageBox.Show("Test Cleanup");
+           // MessageBox.Show("Test Cleanup");
         }
     }
 }
