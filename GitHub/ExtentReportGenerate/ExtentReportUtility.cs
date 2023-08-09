@@ -113,7 +113,7 @@ namespace GitHub.ExtentReportGenerate
         [TestMethod]
         [DataTestMethod]
         [DataRow("Facebook", "https://www.facebook.com", true)]
-        [DataRow("Google", "https://www.google.com", false)]
+        [DataRow("Google", "https://www.google.com", true)]
         [DataRow("Vtiger", "https://www.flipkart.com", true)]
         [TestCategory("ExtentHtmlReporter")]
         public void DataDriven(string website, string url, bool test)

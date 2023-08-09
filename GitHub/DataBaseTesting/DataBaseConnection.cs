@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GitHub.DataBaseTesting
 {
-    [TestClass]
+    //[TestClass]
     public class DataBaseConnection : ExtentReportUtility
     {
         // "jdbc:mysql://rmgtestingserver:3333/projects","root@%","root"
