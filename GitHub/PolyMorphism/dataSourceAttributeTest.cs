@@ -17,7 +17,7 @@ namespace GitHub.PolyMorphism
         [TestCategory("DataSource"), TestCategory("Regression"), TestCategory("Smoke")]
         [Owner("Varun")]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", csvPath,
-            "CsvData#csv", DataAccessMethod.Sequential)]
+            "CsvData#csv", DataAccessMethod.Random)]
         //csvpath should be const
         public void CSVData()
         {
