@@ -12,20 +12,21 @@ namespace GitHub
     public class BaseClass
     {
         Uri Uri { get; set; }
-        TestContext testContext;
+        public static TestContext testContext;
         public TestContext TestContext
         { get { return testContext; } set { testContext = value; } }
 
 
-      /*  [AssemblyInitialize]
-        public static void AssemblyIni(TestContext testContext)
+        /* [AssemblyInitialize]
+        public static void AssemblyIni(TestContext context)
         {
-            MessageBox.Show("This is AssemblyInitialize");
+            testContext = context;
         }
+
         [AssemblyCleanup]
         public static void AssemblyCleanup()
         {
-            MessageBox.Show("This is AssemblyCleanUp");
+
         }*/
 
     }

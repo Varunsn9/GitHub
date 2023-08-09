@@ -458,6 +458,7 @@
     <Compile Include="ExtentReportGenerate\ReportUtility.cs" />
     <Compile Include="GitFirstCommit.cs" />
     <Compile Include="InterfaceAndAbstractClass\VirtualOverrideAbstrace.cs" />
+    <Compile Include="PolyMorphism\dataSourceAttributeTest.cs" />
     <Compile Include="PolyMorphism\OOPS.cs" />
     <Compile Include="PolyMorphism\OverRidingVirtualSealed\OverRidingSealedAndVirtual.cs" />
     <Compile Include="PolyMorphism\ThisAndBase.cs" />
@@ -468,11 +469,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="GitHub.config" />
     <None Include="packages.config" />
+    <None Include="Resources\CsvData.csv" />
+    <None Include="Resources\VTiger.xlsx" />
     <None Include="settings.runsettings" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
