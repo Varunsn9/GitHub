@@ -50,6 +50,4 @@
 			<Logger friendlyName="blame" enabled="True" />
 		</Loggers>
 	</LoggerRunSettings>
-
-
 </RunSettings>
