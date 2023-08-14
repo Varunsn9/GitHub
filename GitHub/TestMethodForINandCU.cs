@@ -24,6 +24,7 @@ namespace GitHub
         public static new void ClassINi(TestContext testContext)
         {
             //MessageBox.Show("this is a class INitialize");
+            
         }
 
         [ClassCleanup]
