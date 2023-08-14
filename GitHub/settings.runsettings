@@ -7,6 +7,7 @@
 </Parallelize>
 </MSTest>
 
+	
 	<RunConfiguration>
 		<MaxCpuCount>1</MaxCpuCount>
 		<ResultsDirectory>.\TestResults</ResultsDirectory>
