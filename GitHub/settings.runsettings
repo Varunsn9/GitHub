@@ -6,6 +6,18 @@
 <Scope>MethodLevel</Scope>
 </Parallelize>
 </MSTest>
+
+	<RunConfiguration>
+		<MaxCpuCount>1</MaxCpuCount>
+		<ResultsDirectory>.\TestResults</ResultsDirectory>
+		<TargetPlatform>x86</TargetPlatform>
+		<TargetFrameworkVersion>net4.8</TargetFrameworkVersion>
+		<TestAdaptersPaths>%SystemDrive%\Temp\foo;</TestAdaptersPaths>
+		<TestCaseFilter>(TestCategory=CSVData)</TestCaseFilter>
+		<TestSessionTimeout>10000</TestSessionTimeout>
+		<TreatNoTestsAsError>true</TreatNoTestsAsError>
+	</RunConfiguration>
+	
 	<TestRunParameters>
 
 		<Parameter name="Url" value="http://rmgyantra:rmgy@9999@localhost:8084/" />

@@ -1,4 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +16,7 @@ namespace GitHub.PolyMorphism
         public const string csvPath = "C:\\NewDrive\\VisualStudioRepo\\GitHub\\GitHub\\Resources\\CsvData.csv";
 
         [TestMethod]
-        [TestCategory("DataSource"), TestCategory("Regression"), TestCategory("Smoke")]
+        [TestCategory("DataSource"), TestCategory("CSVData"), TestCategory("Smoke")]
         [Owner("Varun")]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", csvPath,
             "CsvData#csv", DataAccessMethod.Random)]
@@ -33,7 +35,7 @@ namespace GitHub.PolyMorphism
 
        
         [TestMethod]
-        [TestCategory("excelData"), TestCategory("Regression"), TestCategory("Smoke")]
+        [TestCategory("ExcelData"), TestCategory("Regression"), TestCategory("Smoke")]
         [Owner("Varun")]
         [DataSource("System.Data.OleDb",
            "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + excelPath +
@@ -41,12 +43,16 @@ namespace GitHub.PolyMorphism
         //excelpath should be const
         public void ExcelData()
         {
+            IWebDriver driver =new ChromeDriver();
             var username = TestContext.DataRow[2].ToString();
             var password = TestContext.DataRow["password"].ToString();
             Console.WriteLine($"username is {username} and password is {password}");
             
             Console.WriteLine(TestContext.DataRow["HOMEPAGE_TITLE"]);
             Console.WriteLine(TestContext.DataRow["HOMEPAGE_URL"]);
+            
+            driver.Close();
+            driver.Dispose();
         }
        
     }
